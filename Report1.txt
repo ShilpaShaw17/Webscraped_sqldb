@@ -1,0 +1,54 @@
+Operation stopped...
+
+- Initializing Data Flow Task (Success)
+
+- Initializing Connections (Success)
+
+- Setting SQL Command (Success)
+
+- Setting Source Connection (Success)
+
+- Setting Destination Connection (Success)
+
+- Validating (Success)
+	Messages
+	* Warning 0x80049304: Data Flow Task 1: Warning: Could not open global shared memory to communicate with performance DLL; data flow performance counters are not available.  To resolve, run this package as an administrator, or on the system's console.
+	 (SQL Server Import and Export Wizard)
+	
+
+- Prepare for Execute (Success)
+
+- Pre-execute (Success)
+	Messages
+	* Information 0x402090dc: Data Flow Task 1: The processing of file "C:\Users\SHILPA\Desktop\assing\scraped_data_utf8_final.csv" has started.
+	 (SQL Server Import and Export Wizard)
+	
+
+- Executing (Error)
+	Messages
+	* Error 0xc02020a1: Data Flow Task 1: Data conversion failed. The data conversion for column "meta_title" returned status value 4 and status text "Text was truncated or one or more characters had no match in the target code page.".
+	 (SQL Server Import and Export Wizard)
+	
+	* Error 0xc020902a: Data Flow Task 1: The "Source - scraped_data_utf8_final_csv.Outputs[Flat File Source Output].Columns[meta_title]" failed because truncation occurred, and the truncation row disposition on "Source - scraped_data_utf8_final_csv.Outputs[Flat File Source Output].Columns[meta_title]" specifies failure on truncation. A truncation error occurred on the specified object of the specified component.
+	 (SQL Server Import and Export Wizard)
+	
+	* Error 0xc0202092: Data Flow Task 1: An error occurred while processing file "C:\Users\SHILPA\Desktop\assing\scraped_data_utf8_final.csv" on data row 2.
+	 (SQL Server Import and Export Wizard)
+	
+	* Error 0xc0047038: Data Flow Task 1: SSIS Error Code DTS_E_PRIMEOUTPUTFAILED.  The PrimeOutput method on Source - scraped_data_utf8_final_csv returned error code 0xC0202092.  The component returned a failure code when the pipeline engine called PrimeOutput(). The meaning of the failure code is defined by the component, but the error is fatal and the pipeline stopped executing.  There may be error messages posted before this with more information about the failure.
+	 (SQL Server Import and Export Wizard)
+	
+
+- Copying to [dbo].[scraped_data_utf8_final] (Stopped)
+
+- Post-execute (Success)
+	Messages
+	* Information 0x402090dd: Data Flow Task 1: The processing of file "C:\Users\SHILPA\Desktop\assing\scraped_data_utf8_final.csv" has ended.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x4004300b: Data Flow Task 1: "Destination - scraped_data_utf8_final" wrote 0 rows.
+	 (SQL Server Import and Export Wizard)
+	
+
+
+
